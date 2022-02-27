@@ -47,6 +47,15 @@ def staticpagehere(request):
     context = {}
     if request.method == "GET":
         return render(request, 'djangoapp/static.html', context)
+    
+def aboutus(request):
+    context = {}
+    if request.method == "GET":
+        return render(request, 'djangoapp/about.html', context)
+def contactus(request):
+    context = {}
+    if request.method == "GET":
+        return render(request, 'djangoapp/contactus.html', context)
 
 
 # Create a `get_dealer_details` view to render the reviews of a dealer
